@@ -21,7 +21,7 @@ var _default = function _default(userConfig) {
   combinedConfig.ns = [combinedConfig.defaultNS];
 
   if (_detectNode.default && !process.browser) {
-    var fs = eval("require('fs')");
+    var fs = require('fs');
 
     var path = require('path');
 
