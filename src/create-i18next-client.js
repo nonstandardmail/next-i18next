@@ -10,8 +10,8 @@ export default (config) => {
   if (!i18n.isInitialized) {
 
     if (isNode) {
-      const i18nextNodeBackend = eval("require('i18next-node-fs-backend')")
-      const i18nextMiddleware = eval("require('i18next-express-middleware')")
+      const i18nextNodeBackend = require('i18next-node-fs-backend')
+      const i18nextMiddleware = require('i18next-express-middleware')
       i18n.use(i18nextNodeBackend)
       if (config.serverLanguageDetection) {
         i18n.use(i18nextMiddleware.LanguageDetector)
