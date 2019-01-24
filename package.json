@@ -32,11 +32,6 @@
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint && yarn test"
-    }
-  },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",

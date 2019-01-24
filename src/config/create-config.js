@@ -13,7 +13,7 @@ export default (userConfig) => {
   combinedConfig.ns = [combinedConfig.defaultNS]
 
   if (isNode && !process.browser) {
-    const fs = eval("require('fs')")
+    const fs = require('fs')
     const path = require('path')
 
     const getAllNamespaces = p => fs.readdirSync(p).map(file => file.replace('.json', ''))
